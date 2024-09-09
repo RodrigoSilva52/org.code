@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Declara o tipo de documento e a versão do HTML (HTML5). -->
+<html lang="en">
+  <!-- Define o início do documento HTML e especifica o idioma como inglês. -->
+  <head>
+    <!-- Início da seção de cabeçalho do documento, onde estão as informações de metadados e links para arquivos externos. -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 para suportar a maioria dos caracteres internacionais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define a área de visualização para garantir que a página seja exibida corretamente em dispositivos móveis. -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Inclui o arquivo de estilo CSS externo para estilizar o formulário. -->
+    <title>Formulário</title>
+    <!-- Define o título da página que será exibido na aba do navegador. -->
+  </head>
+  <body>
+    <!-- Início da seção de corpo do documento, onde o conteúdo visível da página é inserido. -->
+    <form action="#" method="get">
+      <!-- Início do formulário. O atributo 'action' define o destino dos dados do formulário e o 'method' define o método HTTP. -->
+      <label for="nome">Nome:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "nome". -->
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite seu nome"
+        required
+      />
+      <!-- Define um campo de entrada de texto com o nome "nome", o ID "nome", um texto de espaço reservado e o campo é obrigatório. -->
+
+      <br />
+      <br />
+      <!-- Adiciona quebras de linha para espaçamento. -->
+
+      <label for="email">Email:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "email". -->
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        required
+      />
+      <!-- Define um campo de entrada de email com o nome "email", o ID "email", um texto de espaço reservado e o campo é obrigatório. -->
+
+      <br />
+      <br />
+
+      <label for="password">Senha:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "password". -->
+      <input type="password" name="password" id="password" />
+      <!-- Define um campo de entrada de senha com o nome "password" e o ID "password". -->
+
+      <br />
+      <br />
+
+      <label for="idade">Idade:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "idade". -->
+      <input type="number" name="idade" id="idade" min="18" max="60" />
+      <!-- Define um campo de entrada numérica com o nome "idade", o ID "idade", e define o intervalo permitido entre 18 e 60 anos. -->
+
+      <br />
+      <br />
+
+      <label for="imgPerfil">Imagem Perfil:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "imgPerfil". -->
+      <input type="file" name="imgPerfil" id="imgPerfil" />
+      <!-- Define um campo de entrada para upload de arquivos com o nome "imgPerfil" e o ID "imgPerfil". -->
+
+      <br />
+      <br />
+
+      <label for="imgProdutos">Imagem Produtos:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "imgProdutos". -->
+      <input type="file" name="imgProdutos" id="imgProdutos" multiple />
+      <!-- Define um campo de entrada para upload de múltiplos arquivos com o nome "imgProdutos" e o ID "imgProdutos". -->
+
+      <br />
+      <br />
+
+      <label for="phone">Telefone:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "phone". -->
+      <input type="tel" name="phone" id="phone" minlength="11" maxlength="15" />
+      <!-- Define um campo de entrada para números de telefone com o nome "phone", o ID "phone", e especifica o comprimento mínimo e máximo do número. -->
+
+      <br />
+      <br />
+
+      <label for="valorProduto">Valor:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "valorProduto". -->
+      <input
+        type="number"
+        name="valorProduto"
+        id="valorProduto"
+        min="0"
+        step="0.010"
+      />
+      <!-- Define um campo de entrada numérica com o nome "valorProduto", o ID "valorProduto", e define o valor mínimo e o passo de incremento. -->
+
+      <br />
+      <br />
+
+      <label for="cor_favorita">Cor favorita:</label>
+      <!-- Define o rótulo para o campo de entrada com o ID "cor_favorita". -->
+      <input type="color" name="cor_favorita" id="cor_favorita" />
+      <!-- Define um campo de entrada para seleção de cor com o nome "cor_favorita" e o ID "cor_favorita". -->
+
+      <br />
+      <br />
+
+      <input type="checkbox" name="Basquete" id="Basquete" />
+      <label for="Basquete">Basquete</label>
+      <!-- Define uma caixa de seleção para a opção "Basquete" com o nome "Basquete" e o ID "Basquete". -->
+
+      <input type="checkbox" name="ping_pong" id="ping_pong" />
+      <label for="ping_pong">Ping Pong</label>
+      <!-- Define uma caixa de seleção para a opção "Ping Pong" com o nome "ping_pong" e o ID "ping_pong". -->
+
+      <br />
+      <br />
+
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <label for="feminino">Feminino</label>
+      <!-- Define um botão de rádio para a opção "Feminino" com o nome "sexo", o ID "feminino", e o valor "feminino". -->
+
+      <input type="radio" name="sexo" id="masculino" value="masculino" />
+      <label for="masculino">Masculino</label>
+      <!-- Define um botão de rádio para a opção "Masculino" com o nome "sexo", o ID "masculino", e o valor "masculino". -->
+
+      <br />
+      <br />
+
+      <label for="country">Pais:</label>
+      <!-- Define o rótulo para o campo de seleção com o ID "country". -->
+      <select name="country" id="country">
+        <!-- Define um campo de seleção com o nome "country" e o ID "country". -->
+        <option value="Brasil">Brasil</option>
+        <!-- Define uma opção na lista suspensa para "Brasil". -->
+        <option value="EUA">EUA</option>
+        <!-- Define uma opção na lista suspensa para "EUA". -->
+        <option value="Argentina">Argentina</option>
+        <!-- Define uma opção na lista suspensa para "Argentina". -->
+        <option value="Alemanha">Alemanha</option>
+        <!-- Define uma opção na lista suspensa para "Alemanha". -->
+      </select>
+
+      <br />
+      <br />
+
+      <label for="descricao">Descrição:</label>
+      <!-- Define o rótulo para o campo de texto com o ID "descricao". -->
+      <textarea
+        id="descricao"
+        name="descricao"
+        placeholder="Digite uma breve descrição sobre você!"
+        required
+      ></textarea>
+      <!-- Define uma área de texto com o nome "descricao", o ID "descricao", um texto de espaço reservado e o campo é obrigatório. -->
+
+      <br />
+      <br />
+
+      <input type="submit" value="Enviar Formulário" />
+      <!-- Define um botão de envio para o formulário com o valor "Enviar Formulário". -->
+    </form>
+  </body>
+</html>
