@@ -4,106 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="Formulario" content="width=device-width, initial-scale=1.0" />
     <title>Formulario_Aluno</title>
+    <form action="*" method="get"></form>
   </head>
-  <body>
-    <form action="*" method="get">
+  <fieldset>
+    <legend>
       <header><h1>Cadastro Aluno</h1></header>
+    </legend>
+    <!-- Campo de texto para nome -->
+    <section>
+      <label for="nome">Nome: </label>
+      <input type="text" name="nome" id="nome" required />
+    </section>
 
-      <!-- Campo de texto para nome -->
-      <section>
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome" required />
-      </section>
+    <br />
 
-      <br />
+    <!-- Campo numérico para idade -->
+    <section>
+      <label for="idade">Idade: </label>
+      <input type="number" name="idade" id="idade" required />
+    </section>
 
-      <!-- Campo numérico para idade -->
-      <section>
-        <label for="idade">Idade: </label>
-        <input type="number" name="idade" id="idade" required />
-      </section>
+    <br />
 
-      <br />
+    <!-- Campo de upload de arquivo -->
+    <section>
+      <label for="file">Enviar Arquivos: </label>
+      <input type="file" name="file" id="file" />
+    </section>
 
-      <!-- Campo de upload de arquivo -->
-      <section>
-        <label for="file">Enviar Arquivos: </label>
-        <input type="file" name="file" id="file" />
-      </section>
+    <br />
 
-      <br />
+    <!-- Campo de email -->
+    <section>
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" />
+    </section>
 
-      <!-- Campo de email -->
-      <section>
-        <label for="email">Email: </label>
-        <input type="email" name="email" id="email" />
-      </section>
+    <br />
 
-      <br />
+    <!-- Campo de senha -->
+    <section>
+      <label for="senha">Senha: </label>
+      <input type="password" name="senha" id="senha" />
+    </section>
 
-      <!-- Campo de senha -->
-      <section>
-        <label for="senha">Senha: </label>
-        <input type="password" name="senha" id="senha" />
-      </section>
+    <br />
 
-      <br />
+    <!-- Campo de data para data de nascimento -->
+    <section>
+      <label for="data">Data de Nascimento: </label>
+      <input type="date" name="data" id="data" />
+    </section>
 
-      <!-- Campo de data para data de nascimento -->
-      <section>
-        <label for="data">Data de Nascimento: </label>
-        <input type="date" name="data" id="data" />
-      </section>
+    <br />
 
-      <br />
+    <!-- Campo de telefone -->
+    <section>
+      <label for="tel">Telefone: </label>
+      <input type="tel" name="tel" id="tel" placeholder="(XX) XXXXX-XXXX" />
+    </section>
 
-      <!-- Campo de telefone -->
-      <section>
-        <label for="tel">Telefone: </label>
-        <input type="tel" name="tel" id="tel" placeholder="(XX) XXXXX-XXXX" />
-      </section>
+    <br />
 
-      <br />
+    <!-- Opções de gênero com botões de rádio -->
+    <section>
+      <label for="gender">Gênero: </label>
 
-      <!-- Opções de gênero com botões de rádio -->
-      <section>
-        <label for="gender">Gênero: </label>
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <label for="feminino">Masculino</label>
 
-        <input type="radio" name="sexo" id="feminino" value="feminino" />
-        <label for="feminino">Masculino</label>
+      <input type="radio" name="sexo" id="masculino" value="masculino" />
+      <label for="masculino">Feminino</label>
+    </section>
 
-        <input type="radio" name="sexo" id="masculino" value="masculino" />
-        <label for="masculino">Feminino</label>
-      </section>
+    <br />
 
-      <br />
+    <!-- Campo de seleção para estado -->
+    <section>
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado">
+        <option>Selecione um estado...</option>
+        <option value="PR">Pará</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RS">Rio Grande do Sul</option>
+      </select>
+    </section>
 
-      <!-- Campo de seleção para estado -->
-      <section>
-        <label for="estado">Estado:</label>
-        <select name="estado" id="estado">
-          <option>Selecione um estado...</option>
-          <option value="PR">Pará</option>
-          <option value="SP">São Paulo</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="RS">Rio Grande do Sul</option>
-        </select>
-      </section>
+    <br />
 
-      <br />
+    <!-- Área de texto para mensagem -->
+    <section>
+      <label for="mensagm">Mensagem: </label>
+      <textarea name="msgtext" id="msgtext" cols="80" rows="7"></textarea>
+    </section>
 
-      <!-- Área de texto para mensagem -->
-      <section>
-        <label for="mensagm">Mensagem: </label>
-        <textarea name="msgtext" id="msgtext" cols="80" rows="7"></textarea>
-      </section>
-
-      <br />
-      <!-- Botão Enviar -->
-      <section>
-        <input type="submit" value="Enviar" />
-      </section>
-    </form>
-  </body>
+    <br />
+    <!-- Botão Enviar -->
+    <section>
+      <input type="submit" value="Enviar" />
+    </section>
+  </fieldset>
+  <body></body>
 </html>
